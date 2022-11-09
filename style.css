@@ -40,7 +40,7 @@ h3 {
   font-size: 32px;
   line-height: 36px;
   color: #52503b;
-  margin: 0 auto;
+  margin: 0;
 }
 
 h4 {
@@ -248,27 +248,39 @@ p {
   height: 726px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0 136px 0;
+}
+
+.perfect_escape_elem {
+  width: 1168px;
 }
 
 .perfect_escape_h4 {
   width: 554px;
 }
 
-.perfect_escape_icon_text{
+.perfect_escape_icon_text {
   display: flex;
-  justify-content: space-between;
+  margin-top: 30px;
+  gap: 41px;
+}
+
+.kitchen,
+.coffee {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 568px;
+  margin-top: 32px;
 }
 
 .kitchen {
-  display: flex;
-  gap: 16px;
+  height: 50px;
 }
 
-.icon_kitchen {
-  background: url(/img/Stove-Icon.svg);
-  height: 36px;
-  width: 36px;
+.coffee {
+  height: 70px;
 }
 
 .perfect_escape_title {
@@ -279,8 +291,55 @@ p {
   color: #333333;
 }
 
-.icon_outdoor{
+.icon_kitchen {
+  background: url(/img/Stove-Icon.svg);
+  height: 36px;
+}
+
+.icon_outdoor {
   background: url(/img/Trees-Icon.svg);
   height: 28px;
+}
+
+.icon_coffee {
+  background: url(/img/Coffee-Maker-Icon.svg);
+  height: 36px;
+}
+
+.icon_natural {
+  background: url(/img/Forest-Icon.svg);
+  height: 27px;
+}
+
+.icon_conditioner {
+  background: url(/img/Air-Conditioner-Icon.svg);
+  height: 18px;
+}
+
+.icon_storage {
+  background: url(/img/Briefcase-Icon.svg);
+  height: 33px;
+}
+
+.icon_cutlery {
+  background: url(/img/Glass-Icon.svg);
+  height: 36px;
+}
+
+.icon_pizza{
+  background: url(/img/Pizza-Icon.svg);
+  height: 36px;
+}
+
+.icon_kitchen,
+.icon_outdoor,
+.icon_coffee,
+.icon_natural,
+.icon_conditioner,
+.icon_storage,
+.icon_cutlery,
+.icon_pizza {
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 36px;
 }
