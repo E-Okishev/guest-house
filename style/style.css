@@ -68,7 +68,7 @@ p {
 }
 
 .logo {
-  background-image: url("/img/logo.svg");
+  background-image: url("../img/logo.svg");
 }
 .logo_header {
   width: 128px;
@@ -90,7 +90,7 @@ p {
 }
 
 .first_screen {
-  background-image: url("/img/IMAGE.png");
+  background-image: url("../img/IMAGE.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 730px;
@@ -120,7 +120,7 @@ p {
 }
 
 .first_screen_mouse {
-  background-image: url("/img/mouse.svg");
+  background-image: url("../img/mouse.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 60px;
@@ -185,7 +185,7 @@ p {
 
 .bg_photo {
   height: 600px;
-  background-image: url(/img/bg.png);
+  background-image: url('../img/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -224,7 +224,7 @@ p {
 }
 
 .beds_image {
-  background: url(/img/Bed-Icon.svg);
+  background: url('../img/Bed-Icon.svg');
 }
 
 .beds_p {
@@ -234,11 +234,11 @@ p {
 }
 
 .bedroom_image {
-  background: url(/img/Door-Icon.svg);
+  background: url('../img/Door-Icon.svg');
 }
 
 .bathrooms_image {
-  background: url(/img/Bath-Tub-Icon.svg);
+  background: url('../img/Bath-Tub-Icon.svg');
   height: 59px;
   width: 64px;
   margin-bottom: 6px;
@@ -292,42 +292,42 @@ p {
 }
 
 .icon_kitchen {
-  background: url(/img/Stove-Icon.svg);
+  background: url('../img/Stove-Icon.svg');
   height: 36px;
 }
 
 .icon_outdoor {
-  background: url(/img/Trees-Icon.svg);
+  background: url('../img/Trees-Icon.svg');
   height: 28px;
 }
 
 .icon_coffee {
-  background: url(/img/Coffee-Maker-Icon.svg);
+  background: url('../img/Coffee-Maker-Icon.svg');
   height: 36px;
 }
 
 .icon_natural {
-  background: url(/img/Forest-Icon.svg);
+  background: url('../img/Forest-Icon.svg');
   height: 27px;
 }
 
 .icon_conditioner {
-  background: url(/img/Air-Conditioner-Icon.svg);
+  background: url('../img/Air-Conditioner-Icon.svg');
   height: 18px;
 }
 
 .icon_storage {
-  background: url(/img/Briefcase-Icon.svg);
+  background: url('../img/Briefcase-Icon.svg');
   height: 33px;
 }
 
 .icon_cutlery {
-  background: url(/img/Glass-Icon.svg);
+  background: url('../img/Glass-Icon.svg');
   height: 36px;
 }
 
 .icon_pizza{
-  background: url(/img/Pizza-Icon.svg);
+  background: url('../img/Pizza-Icon.svg');
   height: 36px;
 }
 
