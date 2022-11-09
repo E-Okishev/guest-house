@@ -343,3 +343,8 @@ p {
   background-position: center center;
   width: 36px;
 }
+
+.slider_reviews{
+  height: 682px;
+  background: #FAF8F0;
+}
