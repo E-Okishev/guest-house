@@ -183,11 +183,53 @@ p {
   align-items: center;
 }
 
-.bg_photo {
+.bg_photo0 {
   height: 600px;
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.bg_photo1 {
+  height: 600px;
+  background-image: url(../img/H9d6f808ce2c640c3808164a0e8857f93g.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.bg_photo2 {
+  height: 600px;
+  background-image: url(../img/Gol.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.btn {
+  background: #52503b;
+  border: 4px solid #52503b;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 16px 26px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: none;
+  color: #52503b;
+  transition: 0.2s;
 }
 
 .sleeping_arrangements {
@@ -326,7 +368,7 @@ p {
   height: 36px;
 }
 
-.icon_pizza{
+.icon_pizza {
   background: url(../img/Pizza-Icon.svg);
   height: 36px;
 }
@@ -344,7 +386,37 @@ p {
   width: 36px;
 }
 
-.slider_reviews{
+.slider_reviews {
   height: 682px;
-  background: #FAF8F0;
+  background: #faf8f0;
+}
+
+.modal_window {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal {
+  position: fixed;
+  height: 300px;
+  width: 300px;
+  background-color: red;
+  top: 45%;
+  z-index: 9999;
+}
+
+.modal_back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #52503b;
+  opacity: 50%;
+}
+
+.visuali_hidden {
+  display: none;
 }

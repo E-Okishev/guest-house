@@ -10,10 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
   </head>
   <body>
     <header>
@@ -24,7 +20,9 @@
           <a class="nav_item" href="/">Contact</a>
           <a class="nav_item" href="/">Our history</a>
         </div>
-        <a class="nav_btn" href="/">Book now</a>
+        <button type="button" id="show_modal" class="nav_btn" href="/">
+          Book now
+        </button>
       </div>
     </header>
     <section class="first_screen">
@@ -63,7 +61,10 @@
       <div class="orange_cube"></div>
       <h1>The Guest House is the perfect weekend getaway cabin.</h1>
     </section>
-    <section class="bg_photo"></section>
+    <section class="bg_photo1" id="slidePhoto">
+      <button class="btn btn_prew" type="button" id="slider_prew">prew</button>
+      <button class="btn btn_next" type="button" id="slider_next">next</button>
+    </section>
     <section class="sleeping_arrangements">
       <div class="orange_cube"></div>
       <h3>Sleeping arrangements.</h3>
@@ -193,19 +194,15 @@
         </div>
       </div>
     </section>
-    <section class="slider_reviews">
-      <div class="orange_cube"></div>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-        </div>
+    <section class="modal_window">
+      <div id="modal" class="modal visuali_hidden">
+        
+        <button type="button" id="close_modal">Закрыть</button>
       </div>
+      <div id="modal_bg" class="modal_back visuali_hidden"></div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="/script/swiper.js"></script>
-
+    <script src="/script/slider.js"></script>
+    <script src="/script/modal.js"></script>
   </body>
 </html>
