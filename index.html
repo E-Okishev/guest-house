@@ -196,8 +196,32 @@
     </section>
     <section class="modal_window">
       <div id="modal" class="modal visuali_hidden">
-        
-        <button type="button" id="close_modal">Закрыть</button>
+        <button type="button" id="close_modal" class="modal_btn"></button>
+          <form class='modal_form' action="" method="post">
+            <label>
+              Ваше имя:
+              <input type="text" name="name" id="name" placeholder="Иванов Иван Иванович">
+            </label>
+            <label>
+              Ваш E-mail:
+              <input type="email" name="email" id="email" placeholder="example@example.ru">
+            </label>
+            <label>
+              Ваш телефон:
+              <input type="number" name="phone" id="phone" placeholder="8 800 555 3535">
+            </label>
+            <fieldset>
+              <legend>Ваш пол:</legend>
+              <label>
+                <input type="radio" name="sex" id="man" value="man" checked>
+                муж</label>
+                <label>
+                <input type="radio" name="sex" id="woman" value="woman">
+                жен</label>
+            </fieldset>
+            <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Оставьте комментарий"></textarea>
+            <button type="submit">Отправить</button>
+          </form>
       </div>
       <div id="modal_bg" class="modal_back visuali_hidden"></div>
     </section>
