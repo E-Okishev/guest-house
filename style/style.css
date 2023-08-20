@@ -1,3 +1,27 @@
+.bathrooms, .bedrooms, .beds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0 0 0;
+}
+
+.bedrooms__image, .beds__image {
+  height: 64px;
+  width: 45px;
+}
+
+.bathrooms__paragraph, .bedrooms__paragraph, .beds__paragraph {
+  width: 346px;
+  color: #52503b;
+  margin-top: 1px;
+}
+
+.modal_btn, .template-block__icon-pizza, .template-block__icon-cutlery, .template-block__icon-storage, .template-block__icon-conditioner, .template-block__icon-natural, .template-block__icon-coffee, .template-block__icon-outdoor, .template-block__icon-kitchen {
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 36px;
+}
+
 body,
 div,
 html {
@@ -180,7 +204,7 @@ p {
   align-items: center;
 }
 
-.bg_photo {
+.slider-block {
   height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -189,8 +213,7 @@ p {
   align-items: flex-end;
   gap: 20px;
 }
-
-.btn {
+.slider-block__btn {
   background: #52503b;
   border: 4px solid #52503b;
   border-radius: 6px;
@@ -200,166 +223,103 @@ p {
   padding: 16px 26px;
   cursor: pointer;
 }
-
-.btn:hover {
+.slider-block__btn:hover {
   background: none;
   color: #52503b;
   transition: 0.2s;
 }
 
-.sleeping_arrangements {
+.sleeping-arrangements {
   background: #faf8f0;
   height: 530px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-
-.sleeping_h4 {
+.sleeping-arrangements__h4 {
   max-width: 554px;
   text-align: center;
 }
-
-.beds_bed_bath {
+.sleeping-arrangements__conveniences {
   display: flex;
   gap: 72px;
 }
 
-.beds,
-.bedrooms,
-.bathrooms {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px 0 0 0;
-}
-
-.beds_image,
-.bedroom_image {
-  height: 64px;
-  width: 45px;
-}
-
-.beds_image {
+.beds__image {
   background: url(../img/Bed-Icon.svg);
 }
-
-.beds_p {
-  width: 346px;
-  color: #52503b;
-  margin-top: 1px;
-}
-
-.bedroom_image {
+.bedrooms__image {
   background: url(../img/Door-Icon.svg);
 }
-
-.bathrooms_image {
+.bathrooms__image {
   background: url(../img/Bath-Tub-Icon.svg);
   height: 59px;
   width: 64px;
   margin-bottom: 6px;
 }
-
-.the_perfect_escape {
+.perfect-escape {
   height: 726px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 136px 0;
 }
-
-.perfect_escape_elem {
+.perfect-escape__elem {
   width: 1168px;
 }
-
-.perfect_escape_h4 {
+.perfect-escape__h4 {
   width: 554px;
 }
-
-.perfect_escape_icon_text {
+.perfect-escape__icon_text {
   display: flex;
   margin-top: 30px;
   gap: 41px;
 }
 
-.kitchen,
-.coffee {
+.template-block {
   display: flex;
   align-items: center;
   gap: 16px;
   width: 568px;
   margin-top: 32px;
 }
-
-.kitchen {
-  height: 50px;
-}
-
-.coffee {
-  height: 70px;
-}
-
-.perfect_escape_title {
-  color: #52503b;
-}
-
-.perfect_escape_text {
-  color: #333333;
-}
-
-.icon_kitchen {
+.template-block__icon-kitchen {
   background: url(../img/Stove-Icon.svg);
   height: 36px;
 }
-
-.icon_outdoor {
+.template-block__icon-outdoor {
   background: url(../img/Trees-Icon.svg);
   height: 28px;
 }
-
-.icon_coffee {
+.template-block__icon-coffee {
   background: url(../img/Coffee-Maker-Icon.svg);
   height: 36px;
 }
-
-.icon_natural {
+.template-block__icon-natural {
   background: url(../img/Forest-Icon.svg);
   height: 27px;
 }
-
-.icon_conditioner {
+.template-block__icon-conditioner {
   background: url(../img/Air-Conditioner-Icon.svg);
   height: 18px;
 }
-
-.icon_storage {
+.template-block__icon-storage {
   background: url(../img/Briefcase-Icon.svg);
   height: 33px;
 }
-
-.icon_cutlery {
+.template-block__icon-cutlery {
   background: url(../img/Glass-Icon.svg);
   height: 36px;
 }
-
-.icon_pizza {
+.template-block__icon-pizza {
   background: url(../img/Pizza-Icon.svg);
   height: 36px;
 }
-
-.icon_kitchen,
-.icon_outdoor,
-.icon_coffee,
-.icon_natural,
-.icon_conditioner,
-.icon_storage,
-.icon_cutlery,
-.icon_pizza,
-.modal_btn {
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 36px;
+.template-block__text-group__title {
+  color: #52503b;
+}
+.template-block__text-group__text {
+  color: #333333;
 }
 
 .slider_reviews {
