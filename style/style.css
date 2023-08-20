@@ -264,6 +264,9 @@ p {
   align-items: center;
   margin: 0 136px 0;
 }
+.perfect-escape__icon-text {
+  display: flex;
+}
 .perfect-escape__elem {
   width: 1168px;
 }

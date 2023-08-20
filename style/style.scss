@@ -290,6 +290,10 @@ p {
   align-items: center;
   margin: 0 136px 0;
 
+  &__icon-text {
+    display: flex;
+  }
+
   &__elem {
     width: 1168px;
   }
@@ -302,8 +306,6 @@ p {
     display: flex;
     margin-top: 30px;
     gap: 41px;
-
-
   }
 }
 
