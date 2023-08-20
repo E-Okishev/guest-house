@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 body,
 div,
 html {
@@ -6,7 +8,7 @@ html {
 }
 
 header {
-  background: #52503b;
+  background: $dark-green;
 }
 
 a {
@@ -20,7 +22,7 @@ h1 {
   font-weight: 700;
   font-size: 96px;
   line-height: 96px;
-  color: #52503b;
+  color: $dark-green;
   text-align: center;
   width: 1230px;
   margin: 0 0 140px 0;
@@ -31,7 +33,7 @@ h2 {
   font-size: 48px;
   line-height: 53px;
   margin: 34px 0 34px;
-  color: #fff;
+  color: $white;
   text-align: center;
 }
 
@@ -39,7 +41,7 @@ h3 {
   font-weight: 400;
   font-size: 32px;
   line-height: 36px;
-  color: #52503b;
+  color: $dark-green;
   margin: 0;
 }
 
@@ -47,14 +49,14 @@ h4 {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #52503b;
+  color: $dark-green;
   margin: 12px 0 0 0;
 }
 
 p {
   font-size: 14px;
   line-height: 20px;
-  color: #fff;
+  color: $white;
   margin: 0 auto;
 }
 
@@ -65,34 +67,40 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   height: 70px;
-}
-.header__logo {
-  width: 128px;
-  height: 45px;
+
+  &__logo {
+    width: 128px;
+    height: 45px;
+  }
 }
 
 .logo {
   background-image: url("../img/logo.svg");
 }
 
-.nav__item {
-  margin-left: 24px;
-}
-.nav__item:first-child {
-  margin-left: 0;
-}
-.nav__btn {
-  color: #52503b;
-  background: #fff;
-  border-radius: 6px;
-  padding: 11px 18px;
-  border: 4px solid #fff;
-  cursor: pointer;
-}
-.nav__btn:hover {
-  background: none;
-  color: #fff;
-  transition: 0.2s;
+.nav {
+  &__item {
+    margin-left: 24px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__btn {
+    color: $dark-green;
+    background: $white;
+    border-radius: 6px;
+    padding: 11px 18px;
+    border: 4px solid $white;
+    cursor: pointer;
+
+    &:hover {
+      background: none;
+      color: $white;
+      transition: 0.2s;
+    }
+  }
 }
 
 .first-screen {
@@ -104,30 +112,34 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-.first-screen__element {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1174px;
-}
-.first-screen__logo {
-  height: 90px;
-  width: 256px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.first-screen__text {
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.first-screen__mouse {
-  background-image: url("../img/mouse.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 60px;
-  width: 60px;
-  margin-top: 113px;
+
+  &__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1174px;
+  }
+
+  &__logo {
+    height: 90px;
+    width: 256px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__text {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__mouse {
+    background-image: url("../img/mouse.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    margin-top: 113px;
+  }
 }
 
 .second-block {
@@ -136,26 +148,31 @@ p {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-.second-block__texts {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-.second-block__texts__btn {
-  width: 343px;
-}
-.second-block__texts__left-block {
-  width: 360px;
-}
-.second-block__texts__right-block {
-  margin-bottom: 41px;
-}
-.second-block__btn {
-  color: #fff;
-  background: #52503b;
-  border-radius: 6px;
-  padding: 11px 18px;
+
+  &__texts {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    &__btn {
+      width: 343px;
+    }
+
+    &__left-block {
+      width: 360px;
+    }
+
+    &__right-block {
+      margin-bottom: 41px;
+    }
+  }
+
+  &__btn {
+    color: $white;
+    background: $dark-green;
+    border-radius: 6px;
+    padding: 11px 18px;
+  }
 }
 
 .text {
@@ -168,7 +185,7 @@ p {
 .orange-cube {
   height: 8px;
   width: 42px;
-  background-color: #e08631;
+  background-color: $orange;
   margin: 0;
   margin-top: 100px;
   margin-bottom: 33px;
@@ -214,8 +231,8 @@ p {
 }
 
 .btn {
-  background: #52503b;
-  border: 4px solid #52503b;
+  background: $dark-green;
+  border: 4px solid $dark-green;
   border-radius: 6px;
   color: #fff;
   font-size: 16px;
@@ -226,7 +243,7 @@ p {
 
 .btn:hover {
   background: none;
-  color: #52503b;
+  color: $dark-green;
   transition: 0.2s;
 }
 
@@ -269,7 +286,7 @@ p {
 
 .beds_p {
   width: 346px;
-  color: #52503b;
+  color: $dark-green;
   margin-top: 1px;
 }
 
@@ -324,7 +341,7 @@ p {
 }
 
 .perfect_escape_title {
-  color: #52503b;
+  color: $dark-green;
 }
 
 .perfect_escape_text {
@@ -425,7 +442,7 @@ p {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #52503b;
+  background-color: $dark-green;
   opacity: 50%;
 }
 
@@ -437,4 +454,4 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}/*# sourceMappingURL=style.css.map */
+}
