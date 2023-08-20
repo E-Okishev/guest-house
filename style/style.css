@@ -180,31 +180,8 @@ p {
   align-items: center;
 }
 
-.bg_photo0 {
+.bg_photo {
   height: 600px;
-  background-image: url(../img/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 20px;
-}
-
-.bg_photo1 {
-  height: 600px;
-  background-image: url(../img/H9d6f808ce2c640c3808164a0e8857f93g.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 20px;
-}
-
-.bg_photo2 {
-  height: 600px;
-  background-image: url(../img/Gol.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;

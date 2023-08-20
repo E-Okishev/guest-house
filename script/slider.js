@@ -3,24 +3,32 @@ const buttonPrew = document.querySelector('#slider_prew');
 const buttonNext = document.querySelector('#slider_next');
 const showImage = document.querySelector('#slidePhoto');
 
-function onChengeClass() {
-    showImage.classList.replace(`${showImage.classList[0]}`, `bg_photo${currentImage}`)
+const bgImages = [
+    'bg.png',
+    'H9.jpg',
+    'Gol.jpg'
+]
+
+onChengeBgPhoto()
+
+function onChengeBgPhoto() {
+    showImage.setAttribute('style', `background-image: url(../img/${bgImages[currentImage]})`)
 }
 
 function onClickPrew() {
     currentImage -= 1;
     if (currentImage < 0) {
-        currentImage = 2
+        currentImage = bgImages.length - 1;
     }
-    onChengeClass()
+    onChengeBgPhoto()
 };
 
 function onClickNext() {
     currentImage += 1;
-    if (currentImage > 2) {
+    if (currentImage > bgImages.length - 1) {
         currentImage = 0
     }
-    onChengeClass()
+    onChengeBgPhoto()
 }
 
 function slider() {
