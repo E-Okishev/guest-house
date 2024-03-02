@@ -1,1 +1,11 @@
-/*# sourceMappingURL=variables.css.map */
+:root {
+  --font-family: Montserrat;
+
+  --theme-color: #52503B;
+  --light-color: #FAF8F0;
+  --accent-color: #E08631;
+  --font-color: #FFFFFF;
+  --dark-color: #333333;
+
+  --transition: 0.2s;
+}
