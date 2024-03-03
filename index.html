@@ -2,216 +2,226 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <title>Guest house</title>
   <link rel="stylesheet" href="./style/global.css">
   <link rel="stylesheet" href="./style/variables.css">
-  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/style.css"/>
   <link rel="stylesheet" href="./style/modal.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__items">
-      <a href="/">
-        <img class="logo" src="./img/logo.svg" alt="Логотип">
-      </a>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="link nav__link" href="/">Start</a></li>
-          <li class="nav__item"><a class="link nav__link" href="/">Contact</a></li>
-          <li class="nav__item"><a class="link nav__link" href="/">Our history</a></li>
-        </ul>
-      </nav>
-      <button type="button" id="show_modal" class="header__btn">
-        Book now
-      </button>
-    </div>
-  </header>
-  <main class="main">
-    <section class="section">
-      <div class="first-screen">
-        <div class="first-screen__block">
-          <img class="logo first-screen__logo" src="./img/logo.svg" alt="Логотип">
-          <p class="first-screen__title">Experience the perfect combination of modern housing & natural
-            scenery.</p>
-          <p class="first-screen__desc">Located in Lofoten, norway</p>
-        </div>
-        <div class="first-screen__mouse"></div>
+<header class="header">
+  <div class="header__items">
+    <a href="/">
+      <img class="logo" src="./img/logo.svg" alt="Логотип">
+    </a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="link" href="/">Start</a></li>
+        <li class="nav__item"><a class="link" href="/">Contact</a></li>
+        <li class="nav__item"><a class="link" href="/">Our history</a></li>
+      </ul>
+    </nav>
+    <button type="button" id="show_modal" class="button header__btn">
+      Book now
+    </button>
+  </div>
+</header>
+<main class="main">
+  <section class="section">
+    <div class="first-screen">
+      <div class="first-screen__block">
+        <img class="logo first-screen__logo" src="./img/logo.svg" alt="Логотип">
+        <p class="first-screen__title">Experience the perfect combination of modern housing & natural
+          scenery.</p>
+        <p class="first-screen__desc">Located in Lofoten, norway</p>
       </div>
-    </section>
-    <section class="section">
-      <div class="about">
-        <div class="about__block">
-          <div class="accent-line"></div>
-          <div class="description">
-            <div>
-              <p class="about__item">The Guest House is the perfect weekend get-away housing. Located in the Norwegian archipelago, Lofoten, it's a great escape from the hustle and bustle of the city. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.</p>
-            </div>
-            <div class="items-block">
-              <p class="about__item">Below you'll find information about the accommodation and what's included in the price. Don't hesitate to reach out to us vi the contact page if you have any questions around your stay.</p>
-              <a class="link about__link" href="/">Book now</a>
-            </div>
+      <div class="first-screen__mouse"></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="about light-color wrapper">
+      <div class="about__block">
+        <div class="accent-line"></div>
+        <div class="description">
+          <div>
+            <p class="about__item">The Guest House is the perfect weekend get-away housing. Located in the Norwegian
+              archipelago, Lofoten, it's a great escape from the hustle and bustle of the city. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros
+              quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.</p>
+          </div>
+          <div class="items-block">
+            <p class="about__item">Below you'll find information about the accommodation and what's included in the
+              price. Don't hesitate to reach out to us vi the contact page if you have any questions around your
+              stay.</p>
+            <a class="link button about__link" href="/">Book now</a>
           </div>
         </div>
       </div>
-    </section>
-    <section class="title-block">
-      <div class="orange-cube"></div>
-      <h1>The Guest House is the perfect weekend getaway cabin.</h1>
-    </section>
-    <section class="slider-block" id="slidePhoto">
-      <button class="slider-block__btn" type="button" id="slider_prew">prew</button>
-      <button class="slider-block__btn" type="button" id="slider_next">next</button>
-    </section>
-    <section class="sleeping-arrangements">
-      <div class="orange-cube"></div>
-      <h3>Sleeping arrangements.</h3>
-      <h4 class="sleeping-arrangements__h4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis
-        consectetur.
-      </h4>
-      <div class="sleeping-arrangements__conveniences">
-        <div class="beds">
-          <div class="beds__image"></div>
-          <h4>Beds</h4>
-          <p class="beds__paragraph">
-            The cabin is equipped with 12 beds, 4 of which are in bunk. The rent
-            includes linens for all beds.
-          </p>
-        </div>
-        <div class="bedrooms">
-          <div class="bedrooms__image"></div>
-          <h4>Bedrooms</h4>
-          <p class="bedrooms__paragraph">
-            Spread out over two floors, the cabin offers 4 bedrooms. Ranging
-            from 2 to 4 beds per room.
-          </p>
-        </div>
-        <div class="bathrooms">
-          <div class="bathrooms__image"></div>
-          <h4>Bathrooms</h4>
-          <p class="bathrooms__paragraph">
-            The cabin has three bathrooms, all equipped with showers and one
-            with a bath tub,
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="perfect-escape">
-      <div class="perfect-escape__elem">
-        <div class="orange-cube"></div>
-        <h3>The perfect escape.</h3>
-        <h4 class="perfect-escape__h4">
+    </div>
+  </section>
+  <section class="section">
+    <div class="heading-block wrapper">
+      <div class="accent-line"></div>
+      <h1 class="heading">The Guest House is the perfect weekend getaway cabin.</h1>
+    </div>
+  </section>
+  <section class="slider-block" id="slidePhoto">
+    <button class="button slider-block__btn" type="button" id="slider_prew">prew</button>
+    <button class="button slider-block__btn" type="button" id="slider_next">next</button>
+  </section>
+  <section class="section">
+    <div class="block-indent light-color wrapper">
+      <div class="accent-line"></div>
+      <div class="heading-block gap-12">
+        <h2 class="heading-h2">Sleeping arrangements.</h2>
+        <p class="about__item sleeping__desc">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
           scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis
           consectetur.
-        </h4>
+        </p>
       </div>
-      <div class="perfect-escape__icon-text">
-        <div class="perfect-escape__icon-text__left-block">
-          <div class="template-block">
-            <div class="template-block__icon-kitchen"></div>
-            <div class="template-block__text-group">
-              <p class="template-block__text-group__title">Modern Kitchen Appliances</p>
-              <p class="template-block__text-group__text">
+      <div class="article-block-column">
+        <article class="article gap-12">
+          <img src="./img/Bed-Icon.svg" alt="Иконка с кроватью">
+          <div class="article__desc">
+            <h3 class="heading-h3">Beds</h3>
+            <p class="about__item">
+              The cabin is equipped with 12 beds, 4 of which are in bunk. The rent includes linens for all beds.
+            </p>
+          </div>
+        </article>
+        <article class="article gap-12">
+          <img src="./img/Door-Icon.svg" alt="Иконка ванной компанаты">
+          <div class="article__desc">
+            <h3 class="heading-h3">Beds</h3>
+            <p class="about__item">
+              The cabin is equipped with 12 beds, 4 of which are in bunk. The rent includes linens for all beds.
+            </p>
+          </div>
+        </article>
+        <article class="article gap-12">
+          <img src="./img/Bath-Tub-Icon.svg" alt="Иконка с ванной">
+          <div class="article__desc">
+            <h3 class="heading-h3">Beds</h3>
+            <p class="about__item">
+              The cabin is equipped with 12 beds, 4 of which are in bunk. The rent includes linens for all beds.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="block-indent wrapper">
+      <div class="accent-line justify-start"></div>
+      <div class="heading-block gap-12 justify-start">
+        <h2 class="heading-h2">The perfect escape.</h2>
+        <p class="about__item">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur.
+        </p>
+        <div class="article-block-row">
+          <article class="article-row gap-12">
+            <img class="article__img" src="./img/Stove-Icon.svg" alt="Иконка с плитой">
+            <div class="article__desc">
+              <h3 class="heading-h3 justify-start">Modern Kitchen Appliances</h3>
+              <p class="about__item">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
-          </div>
-          <div class="template-block">
-            <div class="template-block__icon-outdoor"></div>
-            <div class="template-block__text-group">
-              <p class="template-block__text-group__title">Outdoor Paths</p>
-              <p class="template-block__text-group__text">
-                Nulla rhoncus feugiat eros quis consectetur.
-              </p>
-            </div>
-          </div>
-          <div class="template-block">
-            <div class="template-block__icon-coffee"></div>
-            <div class="template-block__text-group">
-              <p class="template-block__text-group__title">Coffee Maker</p>
-              <p class="template-block__text-group__text">
-                Vestibulum sit amet urna turpis. Mauris euismod elit et nisi
-                ultrices, ut <br />faucibus orci tincidunt.
-              </p>
-            </div>
-          </div>
-          <div class="template-block">
-            <div class="template-block__icon-natural"></div>
-            <div class="template-block__text-group">
-              <p class="template-block__text-group__title">Natural Scenery</p>
-              <p class="template-block__text-group__text">
-                Cras commodo consequat orci, in convallis risus egestas non.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="perfect-escape__icon-text__right-block">
-          <div class="template-block">
-            <div class="template-block__icon-conditioner"></div>
-            <div class="template-block__text-group">
-              <p class="template-block__text-group__title">Air Conditioner</p>
-              <p class="template-block__text-group__text">
+          </article>
+          <article class="article-row gap-12">
+            <img class="article__img" src="./img/Air-Conditioner-Icon.svg" alt="Иконка с кондиционером">
+            <div class="article__desc">
+              <h3 class="heading-h3 justify-start">Air Conditioner</h3>
+              <p class="about__item">
                 Nullam scelerisque aliquam odio et faucibus.
               </p>
             </div>
-          </div>
-          <div class="template-block">
-            <div class="template-block__icon-storage"></div>
-            <div class="template-block__text-group">
-              <p class="template-block__text-group__title">Storage Solutions</p>
-              <p class="template-block__text-group__text">
-                Morbi neque ex, condimentum dapibus congue et, vulputate ut
-                ligula.
+          </article>
+          <article class="article-row gap-12">
+            <img class="article__img" src="./img/Trees-Icon.svg" alt="Иконка с деревом">
+            <div class="article__desc">
+              <h3 class="heading-h3 justify-start">Outdoor Paths</h3>
+              <p class="about__item">
+                Nulla rhoncus feugiat eros quis consectetur.
               </p>
             </div>
-          </div>
-          <div class="template-block">
-            <div class="template-block__icon-cutlery"></div>
-            <div class="template-block__text-group">
-              <p class="template-block__text-group__title">Cutlery Selection</p>
-              <p class="template-block__text-group__text">
+          </article>
+          <article class="article-row gap-12">
+            <img class="article__img" src="./img/Briefcase-Icon.svg" alt="Иконка с чемоданом">
+            <div class="article__desc">
+              <h3 class="heading-h3 justify-start">Storage Solutions</h3>
+              <p class="about__item">
+                Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.
+              </p>
+            </div>
+          </article>
+          <article class="article-row gap-12">
+            <img class="article__img" src="./img/Coffee-Maker-Icon.svg" alt="Иконка с кофемашиной">
+            <div class="article__desc">
+              <h3 class="heading-h3 justify-start">Coffee Maker</h3>
+              <p class="about__item">
+                Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+              </p>
+            </div>
+          </article>
+          <article class="article-row gap-12">
+            <img class="article__img" src="./img/Glass-Icon.svg" alt="Иконка с бокалом">
+            <div class="article__desc">
+              <h3 class="heading-h3 justify-start">Cutlery Selection</h3>
+              <p class="about__item">
                 Duis tristique sed lorem a vestibulum.
               </p>
             </div>
-          </div>
-          <div class="template-block">
-            <div class="template-block__icon-pizza"></div>
-            <div class="template-block__text-group">
-              <p class="template-block__text-group__title">Take-away Options</p>
-              <p class="template-block__text-group__text">
-                Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus
-                libero ac,<br />
-                cursus quam.
+          </article>
+          <article class="article-row gap-12">
+            <img class="article__img" src="./img/Combined-Shape.svg" alt="Иконка с горами">
+            <div class="article__desc">
+              <h3 class="heading-h3 justify-start">Natural Scenery</h3>
+              <p class="about__item">
+                Cras commodo consequat orci, in convallis risus egestas non.
               </p>
             </div>
-          </div>
+          </article>
+          <article class="article-row gap-12">
+            <img class="article__img" src="./img/Pizza-Icon.svg" alt="Иконка с пиццей">
+            <div class="article__desc">
+              <h3 class="heading-h3 justify-start">Take-away Options</h3>
+              <p class="about__item">
+                Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.
+              </p>
+            </div>
+          </article>
         </div>
       </div>
-    </section>
-    <section class="modal_window">
-      <div id="modal" class="modal visuali_hidden">
-        <button type="button" id="close_modal" class="modal_btn"></button>
-        <h2>Subscribe to our Newsletter</h2>
-        <p>Join thousands getting emails in their inbox.</p>
-        <form class='modal_form' action="" method="post">
-          <input type="text" placeholder="Your Name" autofocus >
-          <button type="submit">Yeah, thanks!</button>
-        </form>
+    </div>
+  </section>
+  <section class="section modal-open">
+    <div id="modal" class="modal visuali_hidden">
+      <button type="button" id="close_modal" class="close-btn">
+        <img src="./img/Vector.svg" alt="Кнопка закрытия" aria-hidden="false">
+      </button>
+      <div class="modal-text-block">
+        <h1 class="modal__title">Subscribe to our Newsletter</h1>
+        <p class="modal__subtitle">Join thousands getting emails in their inbox.</p>
       </div>
-      <div id="modal_bg" class="modal_back visuali_hidden"></div>
-    </section>
-  </main>
+      <form class='form' action="" method="post">
+        <input class="form__input" type="text" placeholder="Your Name" autofocus>
+        <button class="form__button" type="submit">Yeah, thanks!</button>
+      </form>
+    </div>
+    <div id="modal_bg" class="modal_back visuali_hidden"></div>
+  </section>
+</main>
 
-  <script src="/script/slider.js"></script>
-  <script src="/script/modal.js"></script>
+<script src="./script/slider.js"></script>
+<script src="./script/modal.js"></script>
 </body>
 
 </html>
