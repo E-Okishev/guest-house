@@ -71,6 +71,10 @@
   display: none;
 }
 
+.blur {
+  filter: blur(0.3rem);
+}
+
 .form {
   display: grid;
   gap: 16px;
